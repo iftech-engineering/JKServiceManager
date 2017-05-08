@@ -1,0 +1,22 @@
+{
+  "name": "JKServiceManager",
+  "version": "0.1.0",
+  "summary": "A dynamic service manager, providing service registration and invocation. Written in Swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ruguoapp/JKServiceManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jason Yu": "jasy@okjike.com"
+  },
+  "source": {
+    "git": "https://github.com/ruguoapp/JKServiceManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JKServiceManager/**/*"
+}
