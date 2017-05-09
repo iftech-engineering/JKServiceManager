@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JKServiceManager'
   s.version          = '0.1.0'
-  s.summary          = 'A dynamic service manager, providing service registration and invocation. Written in Swift.'
+  s.summary          = 'A lightweight service manager written in Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,11 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/ruguoapp/JKServiceManager'
+  s.homepage         = 'https://github.com/jike-engineering/JKServiceManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jason Yu' => 'jasy@okjike.com' }
-  s.source           = { :git => 'https://github.com/ruguoapp/JKServiceManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jike-engineering/JKServiceManager.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
