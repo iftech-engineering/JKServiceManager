@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import JKServiceManager
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let bundle = Bundle(for: ViewController.self)
+        ServiceManager.registerAndStartAllServices(in: [bundle])
+        
+        // Invoke test service method
+        Services.testService?.doTestJob()
     }
 
     override func didReceiveMemoryWarning() {

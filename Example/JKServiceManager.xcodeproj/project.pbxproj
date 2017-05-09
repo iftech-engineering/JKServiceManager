@@ -14,6 +14,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7C4CC61D562589B279D9A991 /* Pods_JKServiceManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */; };
+		A37F56701EC045310008DDA2 /* TestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F566E1EC043FD0008DDA2 /* TestServiceProtocol.swift */; };
+		A37F56731EC1972F0008DDA2 /* Services.json in Resources */ = {isa = PBXBuildFile; fileRef = A37F566C1EC043890008DDA2 /* Services.json */; };
+		A37F56741EC197330008DDA2 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F56681EC016BD0008DDA2 /* TestService.swift */; };
 		D13271DEA93370DC5E343581 /* Pods_JKServiceManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B85FBFB8C409C0CD160C9EF /* Pods_JKServiceManager_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,11 +30,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A37F56671EC016A60008DDA2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		01E18460EA26E7A9196631F8 /* Pods-JKServiceManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Tests/Pods-JKServiceManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKServiceManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15EC25906BD0D9C81CE68890 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1B6B18D77E47C4781C4BCC24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		04F67A2F0ACEFB040924DE4D /* Pods-JKServiceManager_Example-TestService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Example-TestService.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Example-TestService/Pods-JKServiceManager_Example-TestService.release.xcconfig"; sourceTree = "<group>"; };
+		15EC25906BD0D9C81CE68890 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B6B18D77E47C4781C4BCC24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5B85FBFB8C409C0CD160C9EF /* Pods_JKServiceManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKServiceManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JKServiceManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKServiceManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +60,13 @@
 		607FACE51AFB9204008FA782 /* JKServiceManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKServiceManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		74EBF28231595114927E508C /* JKServiceManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKServiceManager.podspec; path = ../JKServiceManager.podspec; sourceTree = "<group>"; };
+		63AD15FF587FEC81A1C96ED9 /* Pods_JKServiceManager_Example_TestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKServiceManager_Example_TestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EBF28231595114927E508C /* JKServiceManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKServiceManager.podspec; path = ../JKServiceManager.podspec; sourceTree = "<group>"; };
+		A37F56681EC016BD0008DDA2 /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestService.swift; path = ../TestService/TestService.swift; sourceTree = "<group>"; };
+		A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKServiceManager.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JKServiceManager-gvwzrfjdusvcsnczsbufmbttblhz/Build/Products/Debug-iphonesimulator/JKServiceManager/JKServiceManager.framework"; sourceTree = "<group>"; };
+		A37F566C1EC043890008DDA2 /* Services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Services.json; path = ../TestService/Services.json; sourceTree = "<group>"; };
+		A37F566E1EC043FD0008DDA2 /* TestServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServiceProtocol.swift; sourceTree = "<group>"; };
+		B5E2A2031693D6F14906DC0B /* Pods-JKServiceManager_Example-TestService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Example-TestService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Example-TestService/Pods-JKServiceManager_Example-TestService.debug.xcconfig"; sourceTree = "<group>"; };
 		C716181C6DAB270E6CDFF50F /* Pods-JKServiceManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Example/Pods-JKServiceManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D482C76365D7793ACCF304AD /* Pods-JKServiceManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Example/Pods-JKServiceManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F764807335C798DB4F642251 /* Pods-JKServiceManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKServiceManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKServiceManager_Tests/Pods-JKServiceManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,8 +95,10 @@
 		426954303963E44226A06751 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */,
 				5B85FBFB8C409C0CD160C9EF /* Pods_JKServiceManager_Example.framework */,
 				04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */,
+				63AD15FF587FEC81A1C96ED9 /* Pods_JKServiceManager_Example_TestService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,7 +129,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A37F56711EC196DE0008DDA2 /* ServiceProtocols */,
+				A37F56721EC196EC0008DDA2 /* ServiceImpls */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				A37F566C1EC043890008DDA2 /* Services.json */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -155,8 +183,26 @@
 				C716181C6DAB270E6CDFF50F /* Pods-JKServiceManager_Example.release.xcconfig */,
 				01E18460EA26E7A9196631F8 /* Pods-JKServiceManager_Tests.debug.xcconfig */,
 				F764807335C798DB4F642251 /* Pods-JKServiceManager_Tests.release.xcconfig */,
+				B5E2A2031693D6F14906DC0B /* Pods-JKServiceManager_Example-TestService.debug.xcconfig */,
+				04F67A2F0ACEFB040924DE4D /* Pods-JKServiceManager_Example-TestService.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A37F56711EC196DE0008DDA2 /* ServiceProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				A37F566E1EC043FD0008DDA2 /* TestServiceProtocol.swift */,
+			);
+			name = ServiceProtocols;
+			sourceTree = "<group>";
+		};
+		A37F56721EC196EC0008DDA2 /* ServiceImpls */ = {
+			isa = PBXGroup;
+			children = (
+				A37F56681EC016BD0008DDA2 /* TestService.swift */,
+			);
+			name = ServiceImpls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +218,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				0644F5D5E5D0872464DD1335 /* [CP] Embed Pods Frameworks */,
 				4A092B92133C5888850300A4 /* [CP] Copy Pods Resources */,
+				A37F56671EC016A60008DDA2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				A37F56731EC1972F0008DDA2 /* Services.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -362,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A37F56741EC197330008DDA2 /* TestService.swift in Sources */,
+				A37F56701EC045310008DDA2 /* TestServiceProtocol.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,7 +545,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D482C76365D7793ACCF304AD /* Pods-JKServiceManager_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = JKServiceManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -509,7 +561,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C716181C6DAB270E6CDFF50F /* Pods-JKServiceManager_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = JKServiceManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

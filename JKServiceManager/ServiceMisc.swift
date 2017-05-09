@@ -15,3 +15,5 @@ public enum ServiceManagerError: Error {
     case serviceClassMissing
     case bundleReadError
 }
+
+public class Services {}
