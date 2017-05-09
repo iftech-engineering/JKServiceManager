@@ -8,18 +8,20 @@
 
 import Foundation
 
+// The root protocol for all service protocols
 public protocol ServiceProtocol {
     static var isSingleton: Bool { get }
     
-    // If we use Self constraint here, then it would behave like a generic constraint, so ServiceManager's serviceDict won't be able to store with Service.Type.
+    // If we use Self constraint here, then it would behave like a generic constraint, so ServiceManager's serviceDict won't be able to store Service.Type.
     // Note: static members of a class is always lazily evaluated, so this won't bring additional performance overhead.
     static var sharedInstance: ServiceProtocol { get }
+    
     init()
     
-    // Perform additional register logic, such as RGRouter target registration
+    // Perform additional register logic for each custom service protocol
     static func onRegister()
     
-    // Some service might need start on launch
+    // Some service might need to be started on launch
     func startService()
 }
 

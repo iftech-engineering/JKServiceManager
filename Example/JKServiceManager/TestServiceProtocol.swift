@@ -9,10 +9,13 @@
 import Foundation
 import JKServiceManager
 
+// Define a service protocol
 public protocol TestServiceProtocol: ServiceProtocol {
     func doTestJob()
 }
 
+// Extend Services class with typed static member for convenience
+// Otherwise each caller needs to call (ServiceManager.getInstance(for: "testService") as? TestServiceProtocol)
 extension Services {
     public static var testService: TestServiceProtocol? {
         return ServiceManager.getInstance(for: "testService")

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  JKServiceManager
 //
-//  Created by yxztj on 05/06/2017.
-//  Copyright (c) 2017 yxztj. All rights reserved.
+//  Created by Jason Yu on 05/06/2017.
+//  Copyright (c) 2017 Jason Yu. All rights reserved.
 //
 
 import UIKit
@@ -13,18 +13,31 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let bundle = Bundle(for: ViewController.self)
-        ServiceManager.registerAndStartAllServices(in: [bundle])
         
-        // Invoke test service method
+        // 0. Provide logger(optional)
+        ServiceManager.logger = SomeLogger()
+        
+        // 1. Specify bundles that contain Services.json.
+        // Note: If specified bundle doesn't include Services.json, an assert would be triggered.
+        let bundles = [Bundle(for: ViewController.self)]
+        
+        // 2. Register and start all services
+        ServiceManager.registerAndStartAllServices(in: bundles)
+        
+        // 3. Invoke test service method
         Services.testService?.doTestJob()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
+class SomeLogger: ServiceManagerLoggerDelegate {
+    init() {}
+    
+    func info(_ message: String) {
+        print(message)
+    }
+    
+    func error(_ message: String) {
+        print(message)
+    }
+}

@@ -15,11 +15,15 @@ public protocol ServiceManagerLoggerDelegate: class {
 
 public class ServiceManager {
     // Injected logger provider
-    public weak static var logger: ServiceManagerLoggerDelegate?
+    public static var logger: ServiceManagerLoggerDelegate?
     
     private static var servicesDict: [String: ServiceProtocol.Type] = [:]
     private static var serviceRegistrationCompleted = false
     
+    /// Get the service instance for specified serviceName
+    ///
+    /// - Parameter serviceName: The name string of the service
+    /// - Returns: The service instance. Return nil if not found.
     public class func getInstance<ServiceType>(for serviceName: String) -> ServiceType? {
         if serviceRegistrationCompleted == false {
             assert(false, "Trying to get service instance before all service registration completes")
@@ -40,6 +44,10 @@ public class ServiceManager {
         return nil
     }
     
+    /// Register all services specified in Services.json of the bundles, and then start them one by one.
+    ///
+    /// - Parameter bundles: Bundles array that contain Services.json. 
+    /// Note: If any bundle doesn't contain Services.json or it's incorrectly formed, an assert would be triggered.
     public class func registerAndStartAllServices(in bundles: [Bundle]) {
         do {
             try self.registerAllServices(in: bundles)
@@ -49,6 +57,8 @@ public class ServiceManager {
         
         self.startAllServices()
     }
+    
+    // MARK: Private func
     
     private class func registerAllServices(in bundles: [Bundle]) throws {
         logger?.info("Start registerAllServices")

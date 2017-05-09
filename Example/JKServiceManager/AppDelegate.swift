@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  JKServiceManager
 //
-//  Created by yxztj on 05/06/2017.
-//  Copyright (c) 2017 yxztj. All rights reserved.
+//  Created by Jason Yu on 05/06/2017.
+//  Copyright (c) 2017 Jason Yu. All rights reserved.
 //
 
 import UIKit
