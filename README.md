@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/JKServiceManager.svg?style=flat)](http://cocoapods.org/pods/JKServiceManager)
 [![License](https://img.shields.io/cocoapods/l/JKServiceManager.svg?style=flat)](http://cocoapods.org/pods/JKServiceManager)
 [![Platform](https://img.shields.io/cocoapods/p/JKServiceManager.svg?style=flat)](http://cocoapods.org/pods/JKServiceManager)
+[![Build Status](https://travis-ci.org/jike-engineering/JKServiceManager.svg?branch=master)](https://travis-ci.org/jike-engineering/JKServiceManager)
 
 JKServiceManager is a lightweight manager for registering and invoking custom services(app modules), written in Swift.
 
