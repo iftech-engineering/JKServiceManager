@@ -14,5 +14,5 @@ branches:
 # - pod install --project-directory=Example
 script:
 - set -o pipefail
-- xcodebuild test -workspace Example/JKServiceManager.xcworkspace -scheme JKServiceManager-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild test -workspace Example/JKServiceManager.xcworkspace -scheme JKServiceManager-Example ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
