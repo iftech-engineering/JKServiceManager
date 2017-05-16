@@ -1,6 +1,0 @@
-framework module JKServiceManager {
-  umbrella header "JKServiceManager-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -350,7 +350,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKServiceManager_Example/Pods-JKServiceManager_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		3E99E8362F0D1A1B64FE2341 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
