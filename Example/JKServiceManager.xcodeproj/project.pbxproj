@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE5F4C43A2305AD35A38E5D /* Pods_JKServiceManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7C4CC61D562589B279D9A991 /* Pods_JKServiceManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */; };
+		A35264D51ECB19E6008C450B /* Services.json in Resources */ = {isa = PBXBuildFile; fileRef = A35264D41ECB19E6008C450B /* Services.json */; };
+		A35264D61ECB1B69008C450B /* JKServiceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; };
+		A35264D71ECB1B69008C450B /* JKServiceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A35264D81ECB1B87008C450B /* JKServiceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; };
 		A37F56701EC045310008DDA2 /* TestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F566E1EC043FD0008DDA2 /* TestServiceProtocol.swift */; };
 		A37F56731EC1972F0008DDA2 /* Services.json in Resources */ = {isa = PBXBuildFile; fileRef = A37F566C1EC043890008DDA2 /* Services.json */; };
 		A37F56741EC197330008DDA2 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F56681EC016BD0008DDA2 /* TestService.swift */; };
@@ -21,12 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+		A35264D91ECB1BE9008C450B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = JKServiceManager;
+			remoteInfo = JKServiceManager_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,6 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A35264D71ECB1B69008C450B /* JKServiceManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +67,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63AD15FF587FEC81A1C96ED9 /* Pods_JKServiceManager_Example_TestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKServiceManager_Example_TestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EBF28231595114927E508C /* JKServiceManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKServiceManager.podspec; path = ../JKServiceManager.podspec; sourceTree = "<group>"; };
+		A35264D41ECB19E6008C450B /* Services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Services.json; sourceTree = "<group>"; };
 		A37F56681EC016BD0008DDA2 /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestService.swift; path = ../TestService/TestService.swift; sourceTree = "<group>"; };
 		A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKServiceManager.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JKServiceManager-gvwzrfjdusvcsnczsbufmbttblhz/Build/Products/Debug-iphonesimulator/JKServiceManager/JKServiceManager.framework"; sourceTree = "<group>"; };
 		A37F566C1EC043890008DDA2 /* Services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Services.json; path = ../TestService/Services.json; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13271DEA93370DC5E343581 /* Pods_JKServiceManager_Example.framework in Frameworks */,
+				A35264D61ECB1B69008C450B /* JKServiceManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4CC61D562589B279D9A991 /* Pods_JKServiceManager_Tests.framework in Frameworks */,
+				A35264D81ECB1B87008C450B /* JKServiceManager.framework in Frameworks */,
+				0DE5F4C43A2305AD35A38E5D /* Pods_JKServiceManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				A35264D41ECB19E6008C450B /* Services.json */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -243,7 +252,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+				A35264DA1ECB1BE9008C450B /* PBXTargetDependency */,
 			);
 			name = JKServiceManager_Tests;
 			productName = Tests;
@@ -306,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35264D51ECB19E6008C450B /* Services.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,10 +437,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+		A35264DA1ECB1BE9008C450B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* JKServiceManager_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+			targetProxy = A35264D91ECB1BE9008C450B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
