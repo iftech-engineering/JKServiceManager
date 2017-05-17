@@ -7,32 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DE5F4C43A2305AD35A38E5D /* Pods_JKServiceManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF43E8D98CF356CEB2A683 /* Pods_JKServiceManager_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A35264D51ECB19E6008C450B /* Services.json in Resources */ = {isa = PBXBuildFile; fileRef = A35264D41ECB19E6008C450B /* Services.json */; };
 		A35264D61ECB1B69008C450B /* JKServiceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; };
 		A35264D71ECB1B69008C450B /* JKServiceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A35264D81ECB1B87008C450B /* JKServiceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */; };
 		A37F56701EC045310008DDA2 /* TestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F566E1EC043FD0008DDA2 /* TestServiceProtocol.swift */; };
 		A37F56731EC1972F0008DDA2 /* Services.json in Resources */ = {isa = PBXBuildFile; fileRef = A37F566C1EC043890008DDA2 /* Services.json */; };
 		A37F56741EC197330008DDA2 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F56681EC016BD0008DDA2 /* TestService.swift */; };
 		D13271DEA93370DC5E343581 /* Pods_JKServiceManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B85FBFB8C409C0CD160C9EF /* Pods_JKServiceManager_Example.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A35264D91ECB1BE9008C450B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = JKServiceManager_Example;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A37F56671EC016A60008DDA2 /* Embed Frameworks */ = {
@@ -62,12 +48,8 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* JKServiceManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKServiceManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63AD15FF587FEC81A1C96ED9 /* Pods_JKServiceManager_Example_TestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKServiceManager_Example_TestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EBF28231595114927E508C /* JKServiceManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKServiceManager.podspec; path = ../JKServiceManager.podspec; sourceTree = "<group>"; };
-		A35264D41ECB19E6008C450B /* Services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Services.json; sourceTree = "<group>"; };
 		A37F56681EC016BD0008DDA2 /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestService.swift; path = ../TestService/TestService.swift; sourceTree = "<group>"; };
 		A37F566A1EC016EF0008DDA2 /* JKServiceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKServiceManager.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JKServiceManager-gvwzrfjdusvcsnczsbufmbttblhz/Build/Products/Debug-iphonesimulator/JKServiceManager/JKServiceManager.framework"; sourceTree = "<group>"; };
 		A37F566C1EC043890008DDA2 /* Services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Services.json; path = ../TestService/Services.json; sourceTree = "<group>"; };
@@ -85,15 +67,6 @@
 			files = (
 				D13271DEA93370DC5E343581 /* Pods_JKServiceManager_Example.framework in Frameworks */,
 				A35264D61ECB1B69008C450B /* JKServiceManager.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A35264D81ECB1B87008C450B /* JKServiceManager.framework in Frameworks */,
-				0DE5F4C43A2305AD35A38E5D /* Pods_JKServiceManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +89,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for JKServiceManager */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				9B040945AA9732D2D1DCC7F2 /* Pods */,
 				426954303963E44226A06751 /* Frameworks */,
@@ -127,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* JKServiceManager_Example.app */,
-				607FACE51AFB9204008FA782 /* JKServiceManager_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,24 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				A35264D41ECB19E6008C450B /* Services.json */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,27 +191,6 @@
 			productReference = 607FACD01AFB9204008FA782 /* JKServiceManager_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* JKServiceManager_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKServiceManager_Tests" */;
-			buildPhases = (
-				043018D3FF784BFB6CD1A03D /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				3E99E8362F0D1A1B64FE2341 /* [CP] Embed Pods Frameworks */,
-				80372D3B5A946B57FBDEE317 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A35264DA1ECB1BE9008C450B /* PBXTargetDependency */,
-			);
-			name = JKServiceManager_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* JKServiceManager_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -272,11 +204,6 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -294,7 +221,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* JKServiceManager_Example */,
-				607FACE41AFB9204008FA782 /* JKServiceManager_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,32 +237,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A35264D51ECB19E6008C450B /* Services.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043018D3FF784BFB6CD1A03D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		0644F5D5E5D0872464DD1335 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,21 +254,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKServiceManager_Example/Pods-JKServiceManager_Example-frameworks.sh\"\n";
 		};
-		3E99E8362F0D1A1B64FE2341 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKServiceManager_Tests/Pods-JKServiceManager_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4A092B92133C5888850300A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,21 +267,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKServiceManager_Example/Pods-JKServiceManager_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		80372D3B5A946B57FBDEE317 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKServiceManager_Tests/Pods-JKServiceManager_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97178600D060FE096DD4B787 /* [CP] Check Pods Manifest.lock */ = {
@@ -425,23 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A35264DA1ECB1BE9008C450B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* JKServiceManager_Example */;
-			targetProxy = A35264D91ECB1BE9008C450B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -582,42 +439,6 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01E18460EA26E7A9196631F8 /* Pods-JKServiceManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F764807335C798DB4F642251 /* Pods-JKServiceManager_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -635,15 +456,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKServiceManager_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
